@@ -3,82 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title></title>
 </head>
 <body>
-    <h1>Formulário</h1>
+    <h1>Formulario</h1>
 
-    <h3>Formulário com GET</h3>
+    <h3>Formulario com GET</h3>
     <form method="get" action="index.html">
-        <input type="text" name="q" value="Pesquisar aqui GET">  
-        <input type="submit" value="Enviar">
+        <input type="text" name="q" value="Twitter">
+        <input type="submit" value="enviar">
     </form>
-
-    <h3>Formulário com POST</h3>
+   
+    <h3>Formulario com POST</h3>
     <form method="post" action="index.html">
-        <input type="text" name="q" value="Pesquisar aqui POST">  
-        <input type="submit" value="Enviar">
+        <input type="text" name="q">
+        <input type="submit" value="enviar">
     </form>
 
+    <h3>Formulario de Login no Facebook</h3>
 
-
-
-    <h3>Formulário de Login no Facebook</h3>
     <form method="get" action="index.html" enctype="multipart/form-data">
-        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        <input type="text" name="nome" id="nome" placeholder="Nome" required> 
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"> 
+        
+        <br>
 
-        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
-
-        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou Email">
-
-        <input type="password" name="senha" id="senha" placeholder="Nova senha">
+        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou Email" required>
+        <input type="password" name="senha" id="senha" placeholder="Senha" required>
 
         <br><br>
 
-        <label>Data de nascimento</label>
+        <label>Data de Nascimento</label>
         <select name="dia">
+            <option value="05">05</option>
             <option value="10">10</option>
             <option value="15">15</option>
-            <option value="20">20</option>
-            <option value="25">25</option>
         </select>
 
-        <select name="mes" id="">
-            <option value="jan">jan</option>
-            <option value="fev">fev</option>
-            <option value="mar">mar</option>
-            <option value="abr">abr</option>
+        <select name="mes">
+            <option value="jan">Jan</option>
+            <option value="fev">Fev</option>
+            <option value="mar">Mar</option>
         </select>
 
-        <select name="ano" id="">
+        <select name="ano">
             <option value="2000">2000</option>
             <option value="2001">2001</option>
             <option value="2002">2002</option>
-            <option value="2003">2003</option>
         </select>
 
         <br><br>
 
-        <label>Gênero</label> <br>
+        <label>Gênero</label>
 
-        <label for="feminino">feminino</label>
-        <input type="radio" name="genero" id="feminino">
+        <br><br>
+
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="feminino" value="feminino">
 
         <label for="masculino">Masculino</label>
-        <input type="radio" name="genero" id="masculino">
+        <input type="radio" name="genero" id="masculino" value="masculino">
 
         <label for="personalizado">Personalizado</label>
-        <input type="radio" name="genero" id="personalizado">
+        <input type="radio" name="genero" id="personalizado" value="personalizado">
 
         <br><br>
-        
+
         <input type="file">
-        
+
         <br><br>
 
-        <input type="submit" value="Enviar Formulário">
+        <input type="submit" value="Enviar">
     </form>
 
+
+   
 
 </body>
 </html>
